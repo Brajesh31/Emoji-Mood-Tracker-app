@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Mood Tracker</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  
+  <body class="flex items-center justify-center w-screen h-screen bg-gray-300">
+
+    
+      <div class="container relative flex flex-col w-full max-w-md px-5 py-5 text-black bg-white border border-gray-200 rounded-md shadow-lg dark:text-white dark:bg-gray-900 shadow-purple-500/50 dark:border-gray-700">
+        
+        <button id="theme-toggle" class="absolute top-0 right-0 w-auto h-auto p-1 transition-all duration-300 bg-transparent">
+          <span id="theme-icon" class="transition-colors duration-150 ease-in-out cursor-pointer hover:text-yellow-500 material-symbols-outlined">
+            dark_mode
+          </span>
+        </button>
+
+        <h1 class="py-3 m-auto text-3xl font-bold">My Emoji Mood Tracker</h1>
+        <div class="flex items-center justify-center gap-3">
+          <label for="mood-date" class="text-2xl font-semibold">Select Date:</label>
+          <input type="date" id="mood-date" class="max-w-xs px-4 py-1 text-gray-700 border border-gray-300 rounded-lg bg-cool-gray-500 w-50 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <div id="emoji-container" class="p-4 m-auto">
+          <span class="emoji">😊</span>
+          <span class="emoji">😢</span>
+          <span class="emoji">😡</span>
+          <span class="emoji">😴</span>
+        </div>
+        <div id="mood-history" class="flex flex-col items-center justify-center font-semibold text-l"></div>
+      </div>  
+
+
+
+
+
+  </body>
+</html>
